@@ -1,0 +1,22 @@
+@import './scss/abstracts/index';
+
+h1,
+h2 {
+    color: $lendo-dark-blue;
+}
+
+h3 {
+    color: $lendo-blue;
+}
+
+h1 {
+    font-size: rem(70px);
+}
+
+h2 {
+    font-size: rem(50px);
+}
+
+h3 {
+    font-size: rem(40px);
+}
