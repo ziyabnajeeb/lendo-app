@@ -1,5 +1,8 @@
+@import '../../../scss/abstracts/index';
+
 .lendo__transform-growth {
     position: relative;
+    padding-bottom: rem(278px);
 
     &-bg {
         height: 808px;
