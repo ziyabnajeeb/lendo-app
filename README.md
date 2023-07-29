@@ -4,18 +4,19 @@ This project has been gracefully initiated with the help of [Create React App](h
 
 ## Instructions
 
-1. Clone the repository.
-2. Make sure you have Node Version v18.16.0
-3. cd into the project directory
-4. Run the following scripts
+To get started with this project, follow these steps for a seamless experience:
+
+1. Begin by cloning the repository to your local machine.
+2. Ensure that you have Node Version v18.16.0 installed on your system.
+3. Navigate to the project directory using the command line or terminal.
+4. Now, execute the following command to install the necessary dependencies:
 
 ### `npm install`
 
-wait for the dependencies to be installed.
-then run
+Please be patient while the dependencies are being installed. Once the installation process is complete, run the following command to start the application:
 
 ### `npm start`
 
 App will be started at [Lendo App](http://localhost:3000/)
 
-And you are good to go...
+Congratulations! You are all set to explore and use the application. Happy exploring!
