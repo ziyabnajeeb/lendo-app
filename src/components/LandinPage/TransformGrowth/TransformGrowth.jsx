@@ -7,7 +7,7 @@ const TransformGrowth = () => {
   return (
     <Container as="section" fluid className='py-5 my-5 px-0 lendo__transform-growth'>
       <Row>
-        <Col>
+        <Col lg={12}>
           <Image src={applyLoanBg} className='lendo__transform-growth-bg' />
 
           <div className="lendo__transform-growth-content p-5">
