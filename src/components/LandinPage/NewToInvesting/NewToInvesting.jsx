@@ -11,7 +11,7 @@ const NewToInvesting = () => {
   return (
     <Container as='section' className='lendo__new-to-investing pb-5 mt-5' fluid>
       <Row className='px-0'>
-        <Col lg={9} className='mx-auto'>
+        <Col lg={10} className='mx-auto'>
           <Tabs id='lendo__new-to-investing-section' activeKey={key} onSelect={(k) => setKey(k)} className='mb-3 justify-content-center lendo__new-to-investing-section'>
             <Tab eventKey='individuals' title='For Individuals'>
               <div className='d-flex flex-column justify-content-center'>
