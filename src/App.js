@@ -1,11 +1,13 @@
 import './App.scss';
+import { AppFooter, AppNav } from './components';
+import { LandingPage } from './pages';
 
 function App() {
   return (
     <div className='App'>
-      <h1>Hello lendo</h1>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, quis!
-      </p>
+      <AppNav />
+      <LandingPage />
+      <AppFooter />
     </div>
   );
 }
