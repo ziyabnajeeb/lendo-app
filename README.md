@@ -17,6 +17,6 @@ Please be patient while the dependencies are being installed. Once the installat
 
 ### `npm start`
 
-App will be started at [Lendo App](http://localhost:3000/)
+App will be started at [http://localhost:3000/](http://localhost:3000/)
 
 Congratulations! You are all set to explore and use the application. Happy exploring!
