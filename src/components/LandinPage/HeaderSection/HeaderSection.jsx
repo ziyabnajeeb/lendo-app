@@ -7,7 +7,7 @@ import './HeaderSection.scss';
 
 const HeaderSection = () => {
   return (
-    <Container as='header' className='py-5 my-5 lendo__header-section px-4' fluid>
+    <Container as='header' className='pb-5 px-4 lendo__header-section' fluid>
       <Row className='align-items-end'>
         <Col>
           <Image src={qrscanner} />
@@ -17,7 +17,7 @@ const HeaderSection = () => {
           <p className='py-3 w-75 mx-auto'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
           <div className='header-content-learn-more d-flex align-items-center text-center justify-content-center'>
             <Button className='px-3 py-2'>Learn More</Button>
-            <address className='text-primary mb-0 ms-3'>
+            <address className='text-primary mb-0 ms-4'>
               <FaEnvelope className='me-1' />
               <a href='#login' className='text-decoration-none lendo-link'>
                 Contact us

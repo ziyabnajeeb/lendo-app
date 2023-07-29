@@ -1,11 +1,10 @@
-import { AppGrade, Faqs, HowLendoWorks, NewToInvesting, OurCommitment, TransformGrowth } from '../../components';
-import HeaderSection from '../../components/LandinPage/HeaderSection/HeaderSection';
+import { AppGrade, Faqs, Headersection, HowLendoWorks, NewToInvesting, OurCommitment, TransformGrowth } from '../../components';
 import './LandingPage.scss';
 
 const LandingPage = () => {
   return (
-    <div className='lendo__landing-page'>
-      <HeaderSection />
+    <div className='lendo__landing-page pt-5 mt-4'>
+      <Headersection />
       <TransformGrowth />
       <HowLendoWorks />
       <NewToInvesting />
