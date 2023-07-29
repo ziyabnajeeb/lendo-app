@@ -1,0 +1,11 @@
+.lendo__works {
+    &-bg {
+        background-image: url('../../../assets/how-lendo-works-bg.svg');
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        min-height: 820px;
+        margin-top: 12rem
+    }
+}
