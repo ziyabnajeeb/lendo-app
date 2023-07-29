@@ -3,5 +3,21 @@
 .lendo__new-to-investing {
     background-color: $lendo-dark-blue;
     color: $white;
-    min-height: rem(667px);
+    min-height: rem(970px);
+    position: relative;
+
+    &-section {
+        &-cta {
+            position: absolute;
+            bottom: rem(-90px);
+            left: 10%;
+            background-color: $white;
+            width: 80%;
+            padding: rem(90px);
+            margin-top: rem(112px);
+            p {
+                color: $lendo-dark-blue;
+            }
+        }
+    }
 }

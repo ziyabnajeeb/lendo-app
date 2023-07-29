@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Col, Container, Image, Row, Tab, Tabs } from 'react-bootstrap';
+import { Button, Col, Container, Image, Row, Tab, Tabs } from 'react-bootstrap';
 
 import iconSmartly from '../../../assets/icon-smartly.svg';
 import iconConveniently from '../../../assets/icon-conveniently.svg';
@@ -55,6 +55,25 @@ const NewToInvesting = () => {
               </div>
             </Tab>
           </Tabs>
+
+          <div className='lendo__new-to-investing-section-cta d-flex justtify-content-between align-items-center'>
+            <div className='lendo__new-to-investing-section-cta-left'>
+              <p class='fw-lighter mb-0'>Smartly. Conveniently. Efficiently</p>
+              <h2 className='fw-bolder'>
+                New to investing?
+                <br />
+                No worries, we’re here to help.
+              </h2>
+            </div>
+            <div className='lendo__new-to-investing-section-cta-right d-flex flex-column ms-auto'>
+              <Button size='lg' className='px-3 py-2 mb-3'>
+                Start Learning
+              </Button>
+              <Button variant='outline-secondary' size='lg' className='px-3 py-2'>
+                Ask a Question
+              </Button>
+            </div>
+          </div>
         </Col>
       </Row>
     </Container>
