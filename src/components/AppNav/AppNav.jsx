@@ -7,7 +7,7 @@ import './AppNav.scss';
 const AppNav = () => {
   return (
     <Navbar expand='lg' className='bg-body-tertiary lendo__app-nav'>
-      <Container>
+      <Container fluid className='px-4'>
         <Navbar.Brand href='#home' className='me-lg-5'>
           <img src={logo} alt='' srcset='' />
         </Navbar.Brand>

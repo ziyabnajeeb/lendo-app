@@ -1,0 +1,19 @@
+.lendo__transform-growth {
+    position: relative;
+
+    &-bg {
+        height: 808px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &-content {
+        width: 766px;
+        height: 704px;
+        background-color: #fff;
+        position: absolute;
+        top: 450px;
+        right: 140px;
+
+    }
+}
