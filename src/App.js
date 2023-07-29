@@ -2,9 +2,9 @@ import './App.scss';
 import { AppFooter, AppNav } from './components';
 import { LandingPage } from './pages';
 
-function App() {
+const App = () => {
   return (
-    <div className='App'>
+    <div className='lendo'>
       <AppNav />
       <LandingPage />
       <AppFooter />

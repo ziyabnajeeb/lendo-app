@@ -1,0 +1,13 @@
+@import '../../scss/abstracts/index';
+
+.lendo__app-nav {
+    .nav-link {
+        color: $lendo-dark-blue !important;
+        font-weight: 700 !important;
+        font-size: rem(15px);
+    
+        & svg {
+            font-size: 10px!important;
+        }
+    }
+}
