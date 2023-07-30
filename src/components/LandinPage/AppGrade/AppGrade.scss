@@ -2,9 +2,11 @@
 
 .lendo__app-grade {
     background-color: $lendo-light-blue;
+    padding-top: 295px;
+    padding-bottom: 125px;
 
     &-content {
-        min-height: rem(792px);
+        // min-height: rem(792px);
         position: relative;
 
         &-left {
@@ -14,13 +16,13 @@
         &-circle {
             position: absolute;
             right: 0;
-            bottom: 0;
+            bottom: -124px;
         }
 
         &-phone {
             position: absolute;
             right: rem(-200px);
-            bottom: rem(-710px);
+            bottom: rem(-840px);
             width: 100%;
             object-fit: none;
         }
