@@ -1,0 +1,38 @@
+@import '../../../scss/abstracts/index';
+
+.lendo__faqs {
+    margin-top: rem(155px);
+    padding-top: rem(145px);
+    padding-bottom: rem(200px);
+
+    &-header {
+        margin-bottom: rem(80px);
+    }
+
+    &-content {
+        padding-bottom: rem(80px);
+
+        .accordion-item {
+            border-bottom: 1px solid $lendo-light-blue;
+        }
+
+        .accordion-button {
+            font-size: $content-font-size;
+            font-weight: $font-weight-medium;
+
+            &::after {
+                background-image: url('../../../assets/icon-faqs-plus.svg');
+            }
+
+            &:not(.collapsed)::after {
+                background-image: url('../../../assets/icon-faqs-minus.svg');
+            }
+        }
+    }
+
+    &-more {
+        h5 {
+            color: $lendo-dark-blue;
+        }
+    }
+}
