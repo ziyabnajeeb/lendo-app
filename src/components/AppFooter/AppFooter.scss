@@ -1,0 +1,71 @@
+@import '../../scss/abstracts/index';
+
+.lendo__app-footer {
+    background-color: $lendo-light-blue;
+    padding-top: rem(90px);
+    padding-bottom: rem(120px);
+
+    &-branding {
+        font-weight: $font-weight-light;
+        padding-bottom: rem(25px);
+
+        img {
+            width: rem(110px);
+            margin-bottom: rem(22px);
+        }
+    }
+
+    &-links {
+        font-size: rem(18px);
+
+        p {
+            color: $lendo-dark-blue;
+        }
+
+        a {
+
+            text-decoration: none;
+            font-weight: $font-weight-light;
+            color: $lendo-gray;
+
+            svg {
+                color: $lendo-gray;
+                margin-right: rem(10px);
+
+            }
+        }
+    }
+
+    &-subscribe {
+        font-size: rem(18px);
+        width: 80%;
+
+        &-heading-text {
+            padding-top: rem(55px);
+            padding-bottom: rem(25px);
+        }
+
+        &-input {
+            input {
+                padding-block: rem(30px) !important;
+                border-radius: var(--bs-border-radius-lg) !important;
+                padding-right: rem(180px) !important;
+            }
+
+            .btn {
+                position: absolute !important;
+                border-radius: var(--bs-border-radius-lg) !important;
+                top: rem(15px) !important;
+                right: rem(20px) !important;
+                padding-block: rem(15px) !important;
+                padding-inline: rem(30px) !important;
+                z-index: 5 !important;
+            }
+        }
+
+        &-email-text {
+            font-size: rem(13px);
+            padding-top: rem(25px);
+        }
+    }
+}

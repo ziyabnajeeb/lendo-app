@@ -56,7 +56,7 @@ const Faqs = () => {
 
           <div className="lendo__faqs-more text-center">
             <h5 className='fw-bold'>Got more questions?</h5>
-            <p>Please <a href='#/'>Contact us</a> and we will answer your questions</p>
+            <p className='pb-0'>Please <a href='#/'>Contact us</a> and we will answer your questions</p>
           </div>
         </Col>
       </Row>
