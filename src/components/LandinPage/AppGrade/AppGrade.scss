@@ -1,0 +1,28 @@
+@import '../../../scss/abstracts/index';
+
+.lendo__app-grade {
+    background-color: $lendo-light-blue;
+
+    &-content {
+        min-height: rem(792px);
+        position: relative;
+
+        &-left {
+            width: 80%;
+        }
+
+        &-circle {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        &-phone {
+            position: absolute;
+            right: rem(-200px);
+            bottom: rem(-710px);
+            width: 100%;
+            object-fit: none;
+        }
+    }
+}
