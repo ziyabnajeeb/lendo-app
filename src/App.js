@@ -4,7 +4,7 @@ import { LandingPage } from './pages';
 
 const App = () => {
   return (
-    <div className='lendo mt-2'>
+    <div className='lendo mt-1'>
       <AppNav />
       <LandingPage />
       <AppFooter />

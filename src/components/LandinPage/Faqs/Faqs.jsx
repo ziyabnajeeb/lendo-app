@@ -4,7 +4,7 @@ import './Faqs.scss';
 
 const Faqs = () => {
   return (
-    <Container className='lendo__faqs'>
+    <Container as='section' className='lendo__faqs'>
       <Row>
         <Col lg={12}>
           <div className='lendo__faqs-header w-50'>

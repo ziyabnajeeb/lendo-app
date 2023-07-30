@@ -1,0 +1,26 @@
+@import '../../../scss/abstracts/index';
+
+.lendo__copy-rights {
+    background-color: $body-bg;
+    font-size: $smallest-font-size;
+    font-weight: $font-weight-light;
+    padding-block: rem(30px);
+
+    &-copy {
+        padding-bottom: rem(25px);
+    }
+
+    &-links {
+
+        p,
+        a,
+        span {
+            margin-right: rem(10px);
+        }
+
+        a {
+            text-decoration: none;
+            color: $lendo-gray;
+        }
+    }
+}

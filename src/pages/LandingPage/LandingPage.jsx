@@ -3,7 +3,7 @@ import './LandingPage.scss';
 
 const LandingPage = () => {
   return (
-    <div className='lendo__landing-page pt-5 mt-4'>
+    <div className='lendo__landing-page'>
       <Headersection />
       <TransformGrowth />
       <HowLendoWorks />

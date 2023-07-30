@@ -7,7 +7,7 @@ import './HeaderSection.scss';
 
 const HeaderSection = () => {
   return (
-    <Container as='header' className='pb-5 px-4 lendo__header-section' fluid>
+    <Container as='header' className='lendo__header-section px-4' fluid>
       <Row className='align-items-end'>
         <Col>
           <Image src={qrscanner} />

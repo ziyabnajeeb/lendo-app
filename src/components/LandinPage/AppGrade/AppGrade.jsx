@@ -7,7 +7,7 @@ import './AppGrade.scss';
 
 const AppGrade = () => {
   return (
-    <Container className='lendo__app-grade' fluid>
+    <Container as='section' className='lendo__app-grade' fluid>
       <Row>
         <Col lg={12} className='mx-auto'>
           <Container>

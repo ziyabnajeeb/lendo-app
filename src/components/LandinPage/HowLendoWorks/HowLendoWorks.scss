@@ -1,12 +1,25 @@
 @import '../../../scss/abstracts/index';
 
 .lendo__works {
+    padding-top: rem(80px);
+    padding-bottom: rem(145px);
+
+    &-content {
+        padding-top: rem(150px);
+        width: 40%;
+
+        &-investor {
+            padding-top: rem(145px);
+            padding-bottom: rem(250px); 
+        }
+    }
+
     &-bg {
         background-image: url('../../../assets/how-lendo-works-bg.svg');
         background-position: center top;
         background-repeat: no-repeat;
         background-size: cover;
         max-width: 100%;
-        height: rem(915px);
+        height: rem(1100px);
     }
 }

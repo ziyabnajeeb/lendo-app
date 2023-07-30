@@ -17,5 +17,10 @@
         top: 450px;
         right: 140px;
 
+        &-wrapper {
+            padding-block: rem(100px);
+            padding-inline: rem(60px);
+        }
+
     }
 }
