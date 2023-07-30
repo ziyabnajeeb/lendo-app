@@ -1,0 +1,13 @@
+@import '../../../scss/abstracts/index';
+
+.lendo__our-commitment {
+    margin-top: rem(90px);
+
+    &-content {
+        min-height: rem(800px);
+
+        &-right {
+            width: 80%;
+        }
+    }
+}
