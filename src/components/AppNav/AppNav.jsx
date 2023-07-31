@@ -25,7 +25,7 @@ const AppNav = () => {
           <Nav className='align-items-lg-center'>
             <Nav.Link href='#link'>Arabic</Nav.Link>
             <Nav.Link href='#link'>
-              <Button className='px-3 py-2'>Login to Lendo</Button>
+              <Button>Login to Lendo</Button>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

@@ -14,7 +14,7 @@ const TransformGrowth = () => {
             <div className="lendo__transform-growth-content-wrapper">
               <h2 className='fw-bolder'>Transform<br/>waiting time into <br/>instant growth!</h2>
               <p className='py-4'>Designed specifically for the needs of small and medium businesses, Lendo offers instant short-term finance-against-invoice solutions so your company’s cash flow does not suffer every time you accommodate your client with extended or flexible payment terms.</p>
-              <Button className='px-3 py-2'>Apply for a Loan</Button>
+              <Button>Apply for a Loan</Button>
             </div>
           </div>
         </Col>
