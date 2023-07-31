@@ -66,10 +66,10 @@ const NewToInvesting = () => {
               </h2>
             </div>
             <div className='lendo__new-to-investing-section-cta-right d-flex flex-column ms-auto'>
-              <Button size='lg'>
+              <Button size='lg' className='mb-3'>
                 Start Learning
               </Button>
-              <Button variant='outline-secondary' size='lg' className='mb-3'>
+              <Button variant='outline-secondary' size='lg'>
                 Ask a Question
               </Button>
             </div>
