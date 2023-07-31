@@ -48,7 +48,7 @@ const NewToInvesting = () => {
 
             <Tab eventKey='business' title='For Business'>
               <div className='lendo__new-to-investing-section-content-wrapper d-flex flex-column justify-content-center'>
-                <div className='lendo__new-to-investing-section-content-header py-5 text-center'>
+                <div className='lendo__new-to-investing-section-content-header text-center'>
                   <p class='fw-lighter mb-0'>Smartly. Conveniently. Efficiently</p>
                   <h2 class='fw-bolder text-white'>For Business Header</h2>
                 </div>
