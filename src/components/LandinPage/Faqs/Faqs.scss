@@ -7,6 +7,10 @@
 
     &-header {
         margin-bottom: rem(80px);
+
+        a {
+            text-decoration: none;
+        }
     }
 
     &-content {
@@ -33,6 +37,10 @@
     &-more {
         h5 {
             color: $lendo-dark-blue;
+        }
+
+        a {
+            text-decoration: none;
         }
     }
 }
