@@ -20,18 +20,6 @@
             border-bottom: 1px solid $lendo-light-blue;
         }
 
-        .accordion-button {
-            font-size: $content-font-size;
-            font-weight: $font-weight-medium;
-
-            &::after {
-                background-image: url('../../../assets/icon-faqs-plus.svg');
-            }
-
-            &:not(.collapsed)::after {
-                background-image: url('../../../assets/icon-faqs-minus.svg');
-            }
-        }
     }
 
     &-more {
