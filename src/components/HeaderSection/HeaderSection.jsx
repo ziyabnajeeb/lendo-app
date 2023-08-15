@@ -1,8 +1,8 @@
 import { Button, Col, Container, Image, Row } from 'react-bootstrap';
 
 import { FaEnvelope } from 'react-icons/fa6';
-import qrscanner from '../../../assets/qr-scanner.svg';
-import scrollDown from '../../../assets/scroll-down.svg';
+import qrscanner from '../../assets/qr-scanner.svg';
+import scrollDown from '../../assets/scroll-down.svg';
 import './HeaderSection.scss';
 
 const HeaderSection = () => {
