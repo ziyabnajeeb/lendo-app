@@ -1,0 +1,6 @@
+@use '../abstracts' as *;
+
+body {
+  font-size: $content-font-size;
+  color: $lendo-gray;
+}

@@ -1,4 +1,4 @@
-@import '../../scss/abstracts/index';
+@use '../../scss/abstracts' as *;
 
 .lendo__app-footer {
     background-color: $lendo-light-blue;
@@ -6,7 +6,6 @@
     padding-bottom: rem(120px);
 
     &-branding {
-        font-weight: $font-weight-light;
         padding-bottom: rem(25px);
 
         img {
@@ -25,7 +24,6 @@
         a {
 
             text-decoration: none;
-            font-weight: $font-weight-light;
             color: $lendo-gray;
 
             svg {

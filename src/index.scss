@@ -1,13 +1,2 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;500;700;800&display=swap');
-
-
-@import './scss/abstracts/index';
-
-/* The following line can be included in a src/App.scss */
-@import '~bootstrap/scss/bootstrap';
-
-body {
-  font-family: $font-family-base;
-  font-size: $content-font-size;
-  color: $lendo-gray;
-}
+@forward './scss/libs/bootsrap-overrides';
+@forward './scss/globals/globals';

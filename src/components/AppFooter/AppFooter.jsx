@@ -24,19 +24,19 @@ const AppFooter = () => {
                       <p className='fw-bold'>The Company</p>
                       <ul class='list-unstyled'>
                         <li>
-                          <a href='#/'>About Lendo</a>
+                          <a href='#/' className="fw-light">About Lendo</a>
                         </li>
                         <li>
-                          <a href='#/'>Our Thoughts</a>
+                          <a href='#/' className="fw-light">Our Thoughts</a>
                         </li>
                         <li>
-                          <a href='#/'>Careers</a>
+                          <a href='#/' className="fw-light">Careers</a>
                         </li>
                         <li>
-                          <a href='#/'>News</a>
+                          <a href='#/' className="fw-light">News</a>
                         </li>
                         <li>
-                          <a href='#/'>Contact Us</a>
+                          <a href='#/' className="fw-light">Contact Us</a>
                         </li>
                       </ul>
                     </Col>
@@ -45,13 +45,13 @@ const AppFooter = () => {
                       <p className='fw-bold'>For Business</p>
                       <ul class='list-unstyled'>
                         <li>
-                          <a href='#/'>Get Funded</a>
+                          <a href='#/' className="fw-light">Get Funded</a>
                         </li>
                         <li>
-                          <a href='#/'>Purchase Order</a>
+                          <a href='#/' className="fw-light">Purchase Order</a>
                         </li>
                         <li>
-                          <a href='#/'>Lendo Scoring</a>
+                          <a href='#/' className="fw-light">Lendo Scoring</a>
                         </li>
                       </ul>
                     </Col>
@@ -60,16 +60,16 @@ const AppFooter = () => {
                       <p className='fw-bold'>Invest</p>
                       <ul class='list-unstyled'>
                         <li>
-                          <a href='#/'>Invest</a>
+                          <a href='#/' className="fw-light">Invest</a>
                         </li>
                         <li>
-                          <a href='#/'>Auto-invest</a>
+                          <a href='#/' className="fw-light">Auto-invest</a>
                         </li>
                         <li>
-                          <a href='#/'>Invoice Financing </a>
+                          <a href='#/' className="fw-light">Invoice Financing </a>
                         </li>
                         <li>
-                          <a href='#/'>Shari'ah compliance </a>
+                          <a href='#/' className="fw-light">Shari'ah compliance </a>
                         </li>
                       </ul>
                     </Col>
@@ -78,17 +78,17 @@ const AppFooter = () => {
                       <p className='fw-bold'>Get in touch</p>
                       <ul class='list-unstyled'>
                         <li>
-                          <a href='#/'>
+                          <a href='#/' className='fw-light'>
                             <FaTwitter /> Twitter
                           </a>
                         </li>
                         <li>
-                          <a href='#/'>
+                          <a href='#/' className='fw-light'>
                             <FaLinkedinIn /> Linkedin
                           </a>
                         </li>
                         <li>
-                          <a href='#/'>
+                          <a href='#/' className='fw-light'>
                             <FaEnvelope /> Email Us
                           </a>
                         </li>

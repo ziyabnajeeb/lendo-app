@@ -1,4 +1,4 @@
-@import '../../../scss/abstracts/index';
+@use '../../../scss/abstracts' as *;
 
 .lendo__works {
     padding-top: rem(80px);

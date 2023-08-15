@@ -1,9 +1,8 @@
-@import '../../../scss/abstracts/index';
+@use '../../../scss/abstracts' as *;
 
 .lendo__copy-rights {
-    background-color: $body-bg;
+    background-color: $lendo-light-gray;
     font-size: $smallest-font-size;
-    font-weight: $font-weight-light;
     padding-block: rem(30px);
 
     &-copy {

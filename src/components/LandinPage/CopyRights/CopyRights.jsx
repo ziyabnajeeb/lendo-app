@@ -3,7 +3,7 @@ import './CopyRights.scss';
 
 const CopyRights = () => {
   return (
-    <Container as='section' fluid className='lendo__copy-rights'>
+    <Container as='section' fluid className='lendo__copy-rights fw-light'>
       <Row>
         <Col>
           <Container>

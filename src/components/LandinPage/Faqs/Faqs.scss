@@ -1,4 +1,4 @@
-@import '../../../scss/abstracts/index';
+@use '../../../scss/abstracts' as *;
 
 .lendo__faqs {
     margin-top: rem(155px);
@@ -16,9 +16,13 @@
     &-content {
         padding-bottom: rem(80px);
 
-        .accordion-item {
-            border-bottom: 1px solid $lendo-light-blue;
+        .accordion {
+            &-item {
+                border-bottom: 1px solid $lendo-light-blue;
+
+            }
         }
+
 
     }
 

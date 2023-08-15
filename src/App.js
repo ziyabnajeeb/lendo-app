@@ -1,6 +1,6 @@
-import './App.scss';
 import { AppFooter, AppNav } from './components';
 import { LandingPage } from './pages';
+import './App.scss';
 
 const App = () => {
   return (
