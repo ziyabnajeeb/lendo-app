@@ -19,4 +19,36 @@ $gray-800: #343a40;
 $gray-900: #212529;
 $black: #000;
 
+// Bootsrap defaults
+$blue: #0d6efd;
+$green: #198754;
+$cyan: #0dcaf0;
+$yellow: #ffc107;
+$red: #dc3545;
+$light: $gray-100;
 
+$primary: $blue;
+$secondary: $gray-600;
+$success: $green;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$light: $gray-100;
+$dark: $gray-900;
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark
+);
+
+// Custom Colors
+$custom-colors: (
+    "lendo-blue": $lendo-blue,
+    "lendo-dark-blue": $lendo-dark-blue,
+);
