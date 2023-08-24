@@ -1,69 +1,67 @@
 @use '../../scss/abstracts' as *;
 
 .lendo__app-footer {
-    background-color: $lendo-light-blue;
-    padding-top: rem(90px);
-    padding-bottom: rem(120px);
+  background-color: $lendo-light-blue;
+  padding-top: rem(90px);
+  padding-bottom: rem(120px);
 
-    &-branding {
-        padding-bottom: rem(25px);
+  &-branding {
+    padding-bottom: rem(25px);
 
-        img {
-            width: rem(110px);
-            margin-bottom: rem(22px);
-        }
+    img {
+      width: rem(110px);
+      margin-bottom: rem(22px);
+    }
+  }
+
+  &-links {
+    font-size: rem(18px);
+
+    p {
+      color: $lendo-dark-blue;
     }
 
-    &-links {
-        font-size: rem(18px);
+    a {
+      text-decoration: none;
+      color: $lendo-gray;
 
-        p {
-            color: $lendo-dark-blue;
-        }
+      svg {
+        color: $lendo-gray;
+        margin-right: rem(10px);
+      }
+    }
+  }
 
-        a {
+  &-subscribe {
+    font-size: rem(18px);
+    width: 80%;
 
-            text-decoration: none;
-            color: $lendo-gray;
-
-            svg {
-                color: $lendo-gray;
-                margin-right: rem(10px);
-
-            }
-        }
+    &-heading-text {
+      padding-top: rem(55px);
+      padding-bottom: rem(25px);
     }
 
-    &-subscribe {
-        font-size: rem(18px);
-        width: 80%;
+    &-input {
+      input {
+        padding-block: rem(30px) !important;
+        border-radius: var(--bs-border-radius-lg) !important;
+        padding-right: rem(180px) !important;
+      }
 
-        &-heading-text {
-            padding-top: rem(55px);
-            padding-bottom: rem(25px);
-        }
-
-        &-input {
-            input {
-                padding-block: rem(30px) !important;
-                border-radius: var(--bs-border-radius-lg) !important;
-                padding-right: rem(180px) !important;
-            }
-
-            .btn {
-                position: absolute !important;
-                border-radius: var(--bs-border-radius-lg) !important;
-                top: rem(15px) !important;
-                right: rem(20px) !important;
-                padding-block: rem(15px) !important;
-                padding-inline: rem(30px) !important;
-                z-index: 5 !important;
-            }
-        }
-
-        &-email-text {
-            font-size: rem(13px);
-            padding-top: rem(25px);
-        }
+      .btn {
+        position: absolute !important;
+        border-radius: var(--bs-border-radius-lg) !important;
+        top: rem(15px) !important;
+        right: rem(20px) !important;
+        padding-block: rem(15px) !important;
+        padding-inline: rem(30px) !important;
+        z-index: 5 !important;
+      }
     }
+
+    &-email-text {
+      font-size: rem(13px);
+      padding-top: rem(25px);
+    }
+  }
 }

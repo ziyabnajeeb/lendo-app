@@ -1,38 +1,35 @@
 @use '../../../scss/abstracts' as *;
 
 .lendo__faqs {
-    margin-top: rem(155px);
-    padding-top: rem(145px);
-    padding-bottom: rem(200px);
+  margin-top: rem(155px);
+  padding-top: rem(145px);
+  padding-bottom: rem(200px);
 
-    &-header {
-        margin-bottom: rem(80px);
+  &-header {
+    margin-bottom: rem(80px);
 
-        a {
-            text-decoration: none;
-        }
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &-content {
+    padding-bottom: rem(80px);
+
+    .accordion {
+      &-item {
+        border-bottom: 1px solid $lendo-light-blue;
+      }
+    }
+  }
+
+  &-more {
+    h5 {
+      color: $lendo-dark-blue;
     }
 
-    &-content {
-        padding-bottom: rem(80px);
-
-        .accordion {
-            &-item {
-                border-bottom: 1px solid $lendo-light-blue;
-
-            }
-        }
-
-
+    a {
+      text-decoration: none;
     }
-
-    &-more {
-        h5 {
-            color: $lendo-dark-blue;
-        }
-
-        a {
-            text-decoration: none;
-        }
-    }
+  }
 }

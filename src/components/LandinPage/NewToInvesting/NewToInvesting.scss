@@ -1,42 +1,41 @@
 @use '../../../scss/abstracts' as *;
 
 .lendo__new-to-investing {
-    background-color: $lendo-dark-blue;
-    color: $white;
-    min-height: rem(1160px);
-    position: relative;
+  background-color: $lendo-dark-blue;
+  color: $white;
+  min-height: rem(1160px);
+  position: relative;
 
-    &-section {
+  &-section {
+    &-content {
+      &-wrapper {
+        padding-top: rem(135px);
+        padding-bottom: rem(235px);
+      }
 
-        &-content {
-            &-wrapper {
-                padding-top: rem(135px);
-                padding-bottom: rem(235px);
-            }
+      &-header {
+        padding-bottom: rem(120px);
+      }
 
-            &-header {
-                padding-bottom: rem(120px);
-            }
-
-            &-list {
-                p {
-                    padding-bottom: 0;
-                }
-            }
+      &-list {
+        p {
+          padding-bottom: 0;
         }
-
-        &-cta {
-            position: absolute;
-            bottom: rem(-90px);
-            left: 10%;
-            background-color: $white;
-            width: 80%;
-            padding: rem(80px);
-            margin-top: rem(112px);
-
-            p {
-                color: $lendo-dark-blue;
-            }
-        }
+      }
     }
+
+    &-cta {
+      position: absolute;
+      bottom: rem(-90px);
+      left: 10%;
+      background-color: $white;
+      width: 80%;
+      padding: rem(80px);
+      margin-top: rem(112px);
+
+      p {
+        color: $lendo-dark-blue;
+      }
+    }
+  }
 }

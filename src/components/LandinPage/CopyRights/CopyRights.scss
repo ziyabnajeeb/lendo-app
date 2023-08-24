@@ -1,26 +1,25 @@
 @use '../../../scss/abstracts' as *;
 
 .lendo__copy-rights {
-    background-color: $lendo-light-gray;
-    font-size: $smallest-font-size;
-    padding-block: rem(30px);
+  background-color: $lendo-light-gray;
+  font-size: $smallest-font-size;
+  padding-block: rem(30px);
 
-    &-copy {
-        padding-bottom: rem(25px);
+  &-copy {
+    padding-bottom: rem(25px);
+  }
+
+  &-links {
+    p,
+    a,
+    span {
+      margin-right: rem(10px);
+      margin-bottom: 0;
     }
 
-    &-links {
-
-        p,
-        a,
-        span {
-            margin-right: rem(10px);
-            margin-bottom: 0;
-        }
-
-        a {
-            text-decoration: none;
-            color: $lendo-gray;
-        }
+    a {
+      text-decoration: none;
+      color: $lendo-gray;
     }
+  }
 }

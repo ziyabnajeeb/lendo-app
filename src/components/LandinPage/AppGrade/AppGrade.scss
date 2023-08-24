@@ -1,30 +1,30 @@
 @use '../../../scss/abstracts' as *;
 
 .lendo__app-grade {
-    background-color: $lendo-light-blue;
-    padding-top: 295px;
-    padding-bottom: 125px;
+  background-color: $lendo-light-blue;
+  padding-top: 295px;
+  padding-bottom: 125px;
 
-    &-content {
-        // min-height: rem(792px);
-        position: relative;
+  &-content {
+    // min-height: rem(792px);
+    position: relative;
 
-        &-left {
-            width: 80%;
-        }
-
-        &-circle {
-            position: absolute;
-            right: 0;
-            bottom: -124px;
-        }
-
-        &-phone {
-            position: absolute;
-            right: rem(-200px);
-            bottom: rem(-840px);
-            width: 100%;
-            object-fit: none;
-        }
+    &-left {
+      width: 80%;
     }
+
+    &-circle {
+      position: absolute;
+      right: 0;
+      bottom: rem(-124px);
+    }
+
+    &-phone {
+      position: absolute;
+      right: rem(-200px);
+      bottom: rem(-840px);
+      width: 100%;
+      object-fit: none;
+    }
+  }
 }

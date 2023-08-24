@@ -1,10 +1,10 @@
 // Lendo Theme Colors
-$lendo-light-blue: #E4E9EF;
-$lendo-blue: #2365E8;
-$lendo-dark-blue: #15162A;
-$lendo-light-gray : #F8F8F8;
-$lendo-light-gray-300 : #dee2e6;
-$lendo-gray : #53585E;
+$lendo-light-blue: #e4e9ef;
+$lendo-blue: #2365e8;
+$lendo-dark-blue: #15162a;
+$lendo-light-gray: #f8f8f8;
+$lendo-light-gray-300: #dee2e6;
+$lendo-gray: #53585e;
 
 // Whites
 $white: #fff;
@@ -37,18 +37,18 @@ $light: $gray-100;
 $dark: $gray-900;
 
 $theme-colors: (
-    "primary": $primary,
-    "secondary": $secondary,
-    "success": $success,
-    "info": $info,
-    "warning": $warning,
-    "danger": $danger,
-    "light": $light,
-    "dark": $dark
+  'primary': $primary,
+  'secondary': $secondary,
+  'success': $success,
+  'info': $info,
+  'warning': $warning,
+  'danger': $danger,
+  'light': $light,
+  'dark': $dark
 );
 
 // Custom Colors
 $custom-colors: (
-    "lendo-blue": $lendo-blue,
-    "lendo-dark-blue": $lendo-dark-blue,
+  'lendo-blue': $lendo-blue,
+  'lendo-dark-blue': $lendo-dark-blue
 );
