@@ -22,7 +22,8 @@
     "eject": "react-scripts eject",
     "lint": "eslint .",
     "lint:fix": "eslint --fix --ext .js,.jsx .",
-    "format": "prettier --write \"src/**/*.{js,jsx,scss}\""
+    "format:jsx": "prettier --write \"src/**/*.{js,jsx}\"",
+    "format:scss": "prettier --write \"src/**/*.{scss}\""
   },
   "browserslist": {
     "production": [

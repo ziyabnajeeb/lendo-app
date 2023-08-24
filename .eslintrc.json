@@ -19,7 +19,7 @@
   },
   "plugins": ["react", "react-hooks", "prettier"],
   "rules": {
-    "prettier/prettier": "error",
+    "prettier/prettier": 1,
     "react/jsx-filename-extension": [
       1,
       { "extensions": [".js", ".jsx"] }
