@@ -33,7 +33,7 @@
     "no-undef": 1,
     "no-unused-vars": 1,
     "no-console": 1,
-    "import/prefer-default-export": 1,
+    "import/prefer-default-export": 0,
     "no-plusplus": 0,
     "no-underscore-dangle": 0,
     "react/function-component-definition": [

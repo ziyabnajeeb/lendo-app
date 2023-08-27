@@ -6,9 +6,10 @@
     font-weight: 700 !important;
     padding-inline: rem(15px) !important;
     padding-block: rem(10px) !important;
-
+  }
+  &__links {
     & svg {
-      font-size: 10px !important;
+      font-size: rem(10px) !important;
     }
   }
 }

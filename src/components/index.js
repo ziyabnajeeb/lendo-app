@@ -8,3 +8,4 @@ export { default as OurCommitment } from './LandinPage/OurCommitment/OurCommitme
 export { default as AppGrade } from './LandinPage/AppGrade/AppGrade';
 export { default as Faqs } from './LandinPage/Faqs/Faqs';
 export { default as CopyRights } from './LandinPage/CopyRights/CopyRights';
+export { default as ThemeSwitcher } from './ThemeSwitcher/ThemeSwitcher';
