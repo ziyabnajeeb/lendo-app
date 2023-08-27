@@ -13,15 +13,15 @@ const ThemeSwitcher = () => {
 
   return (
     <Button
-      variant={theme === 'dark' ? 'warning' : 'dark'}
-      className="rounded-circle px-3"
+      variant={theme === 'dark' ? 'warning' : 'secondary'}
+      className="rounded-circle p-2 d-flex align-items-center justify-content-center"
       role="switch"
       onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
     >
       {theme === 'dark' ? (
-        <FaSun className="fs-4" />
+        <FaSun className="fs-5" />
       ) : (
-        <FaMoon className="fs-4" />
+        <FaMoon className="fs-5" />
       )}
     </Button>
   );

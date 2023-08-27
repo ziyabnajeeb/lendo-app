@@ -8,7 +8,7 @@ import { ThemeSwitcher } from '../index';
 const AppNav = () => (
   <Navbar
     expand="lg"
-    className="bg-body-tertiary fixed-top lendo__app-nav"
+    className="bg-body-tertiary fixed-top shadow-sm lendo__app-nav"
   >
     <Container fluid className="px-4">
       <Navbar.Brand href="#home" className="me-lg-5">

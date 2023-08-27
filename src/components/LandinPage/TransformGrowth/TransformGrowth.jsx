@@ -12,7 +12,7 @@ const TransformGrowth = () => (
           className="lendo__transform-growth-bg"
         />
 
-        <div className="lendo__transform-growth-content">
+        <div className="lendo__transform-growth-content shadow bg-body">
           <div className="lendo__transform-growth-content-wrapper">
             <h2 className="fw-bolder">
               Transform
