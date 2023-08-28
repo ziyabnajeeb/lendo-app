@@ -1,7 +1,8 @@
 @use 'sass:map';
 @use '../abstracts' as abst;
 
-@use '~bootstrap/scss/bootstrap' with (
+@use '~bootstrap/scss/bootstrap'
+  with(
     // Bsse
     $body-bg: abst.$lendo-light-gray,
     $body-color: abst.$lendo-gray,
@@ -39,3 +40,8 @@
     $theme-colors: map-merge(abst.$theme-colors, abst.$custom-colors),
     // $theme-colors: map-remove(abst.$theme-colors, "info", "light", "dark")
   );
+
+$color-mode-type: data;
+@include bootstrap.color-mode(dark) {
+  --lendo-dark-blue: var(--bs-gray-300);
+}
