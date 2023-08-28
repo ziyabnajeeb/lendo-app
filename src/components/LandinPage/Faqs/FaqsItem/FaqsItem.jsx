@@ -1,6 +1,6 @@
 import { Accordion } from 'react-bootstrap';
 
-import './FaqsItem.scss';
+import './FaqsItem.css';
 
 const FaqsItem = ({ faqs }) => (
   <Accordion.Item id={faqs.id} eventKey={faqs.id}>

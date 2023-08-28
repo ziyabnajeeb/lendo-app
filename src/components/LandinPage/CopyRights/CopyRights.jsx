@@ -1,5 +1,5 @@
 import { Col, Container, Row } from 'react-bootstrap';
-import './CopyRights.scss';
+import './CopyRights.css';
 
 const CopyRights = () => (
   <Container

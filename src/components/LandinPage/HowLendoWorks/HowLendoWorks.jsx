@@ -1,6 +1,6 @@
 import { Col, Container, Row } from 'react-bootstrap';
 
-import './HowLendoWorks.scss';
+import './HowLendoWorks.css';
 
 const HowLendoWorks = () => (
   <Container as="section" className="lendo__works">

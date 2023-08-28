@@ -3,7 +3,7 @@ import { Col, Container, Image, Row } from 'react-bootstrap';
 import appGradeCircleBg from '../../../assets/app-grade-circle.svg';
 import appGradePhone from '../../../assets/app-grade-phone.png';
 import qrScanner from '../../../assets/qr-scanner.svg';
-import './AppGrade.scss';
+import './AppGrade.css';
 
 const AppGrade = () => (
   <Container as="section" className="lendo__app-grade" fluid>

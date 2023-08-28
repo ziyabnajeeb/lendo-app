@@ -1,7 +1,7 @@
 import { Button, Col, Container, Image, Row } from 'react-bootstrap';
 
 import applyLoanBg from '../../../assets/apply-loan-bg.png';
-import './TransformGrowth.scss';
+import './TransformGrowth.css';
 
 const TransformGrowth = () => (
   <Container as="section" fluid className="lendo__transform-growth">

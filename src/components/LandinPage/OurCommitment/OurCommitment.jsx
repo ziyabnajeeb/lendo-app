@@ -2,7 +2,7 @@ import { Button, Col, Container, Image, Row } from 'react-bootstrap';
 
 import { MdArrowOutward } from 'react-icons/md';
 import ourCommitmentBg from '../../../assets/our-commitment.svg';
-import './OurCommitment.scss';
+import './OurCommitment.css';
 
 const OurCommitment = () => (
   <Container as="section" className="lendo__our-commitment">

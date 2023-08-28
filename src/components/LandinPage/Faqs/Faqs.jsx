@@ -1,6 +1,6 @@
 import { Accordion, Col, Container, Row } from 'react-bootstrap';
 
-import './Faqs.scss';
+import './Faqs.css';
 import FaqsItem from './FaqsItem/FaqsItem';
 
 const Faqs = () => {

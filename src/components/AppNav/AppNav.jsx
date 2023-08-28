@@ -2,7 +2,7 @@ import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 
 import { FaChevronDown } from 'react-icons/fa6';
 import logo from '../../assets/logo.svg';
-import './AppNav.scss';
+import './AppNav.css';
 import { ThemeSwitcher } from '../index';
 
 const AppNav = () => (

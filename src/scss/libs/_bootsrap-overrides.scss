@@ -1,7 +1,7 @@
 @use 'sass:map';
 @use '../abstracts' as abst;
 
-@use '~bootstrap/scss/bootstrap'
+@use '../../../node_modules/bootstrap/scss/bootstrap'
   with(
     // Bsse
     $body-bg: abst.$lendo-light-gray,
@@ -37,8 +37,7 @@
     $accordion-icon-width: 1.5rem,
     $accordion-button-icon: abst.$bs-icon-plus,
     $accordion-button-active-icon: abst.$bs-icon-minus,
-    $theme-colors: map-merge(abst.$theme-colors, abst.$custom-colors),
-    // $theme-colors: map-remove(abst.$theme-colors, "info", "light", "dark")
+    $theme-colors: map-merge(abst.$theme-colors, abst.$custom-colors)
   );
 
 $color-mode-type: data;

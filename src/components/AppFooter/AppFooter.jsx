@@ -12,7 +12,7 @@ import { FaEnvelope, FaLinkedinIn, FaTwitter } from 'react-icons/fa6';
 import { CopyRights } from '../../components';
 import lendoLogo from '../../assets/logo.svg';
 import scrollTopArrow from '../../assets/scroll-top.svg';
-import './AppFooter.scss';
+import './AppFooter.css';
 
 const AppFooter = () => (
   <>

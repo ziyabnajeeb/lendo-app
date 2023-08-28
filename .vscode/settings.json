@@ -31,5 +31,6 @@
   },
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "**/node_modules": true
 }
