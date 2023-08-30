@@ -1,4 +1,5 @@
 <img src="./src/assets/logo.svg" width="350" height="80" alt="lendo logo"/>
+
 # Welcome to Lendo App
 
 This project has been gracefully initiated with the help of
