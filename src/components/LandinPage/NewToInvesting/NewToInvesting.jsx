@@ -12,7 +12,7 @@ import {
 import iconSmartly from '../../../assets/icon-smartly.svg';
 import iconConveniently from '../../../assets/icon-conveniently.svg';
 import iconEfficiently from '../../../assets/icon-efficiently.svg';
-import './NewToInvesting.scss';
+import './NewToInvesting.css';
 
 const NewToInvesting = () => {
   const [key, setKey] = useState('individuals');
@@ -105,7 +105,7 @@ const NewToInvesting = () => {
             </Tab>
           </Tabs>
 
-          <div className="lendo__new-to-investing-section-cta d-flex justtify-content-between align-items-center">
+          <div className="lendo__new-to-investing-section-cta d-flex justtify-content-between align-items-center shadow">
             <div className="lendo__new-to-investing-section-cta-left">
               <p className="fw-lighter mb-0">
                 Smartly. Conveniently. Efficiently

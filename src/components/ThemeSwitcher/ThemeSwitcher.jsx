@@ -4,8 +4,13 @@ import { FaMoon, FaSun } from 'react-icons/fa6';
 import { Button } from 'react-bootstrap';
 import { useLocalStorage } from '../../util';
 
-const ThemeSwitcher = () => {
+const ThemeSwitcher = ({ setIsDarkTheme }) => {
   const [theme, setTheme] = useLocalStorage('lendo-theme', 'light');
+
+  const handleThemeToggle = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light');
+    setIsDarkTheme(theme === 'dark');
+  };
 
   useEffect(() => {
     document.documentElement.setAttribute('data-bs-theme', theme);
@@ -16,7 +21,7 @@ const ThemeSwitcher = () => {
       variant={theme === 'dark' ? 'warning' : 'secondary'}
       className="rounded-circle p-2 d-flex align-items-center justify-content-center"
       role="switch"
-      onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+      onClick={handleThemeToggle}
     >
       {theme === 'dark' ? (
         <FaSun className="fs-5" />

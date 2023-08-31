@@ -1,7 +1,7 @@
 @use '../../../scss/abstracts' as *;
 
 .lendo__app-grade {
-  background-color: $lendo-light-blue;
+  background-color: var(--bs-lendo-light-blue);
   padding-top: 295px;
   padding-bottom: 125px;
 

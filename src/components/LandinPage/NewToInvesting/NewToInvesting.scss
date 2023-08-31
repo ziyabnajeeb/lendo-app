@@ -1,8 +1,8 @@
 @use '../../../scss/abstracts' as *;
 
 .lendo__new-to-investing {
-  background-color: $lendo-dark-blue;
-  color: $white;
+  background-color: var(--bs-lendo-dark-blue);
+  color: var(--bs-white);
   min-height: rem(1160px);
   position: relative;
 
@@ -28,13 +28,13 @@
       position: absolute;
       bottom: rem(-90px);
       left: 10%;
-      background-color: $white;
+      background-color: var(--bs-body-bg);
       width: 80%;
       padding: rem(80px);
       margin-top: rem(112px);
 
       p {
-        color: $lendo-dark-blue;
+        color: var(--bs-lendo-dark-blue);
       }
     }
   }
