@@ -14,6 +14,45 @@ import lendoLogo from '../../assets/logo.svg';
 import scrollTopArrow from '../../assets/scroll-top.svg';
 import './AppFooter.css';
 
+const footerLinks = [
+  {
+    title: 'The Company',
+    links: [
+      { title: 'About Lendo', href: '#' },
+      { title: 'Our Thoughts', href: '#' },
+      { title: 'Careers', href: '#' },
+      { title: 'News', href: '#' },
+      { title: 'Contacts', href: '#' }
+    ]
+  },
+
+  {
+    title: 'For Business',
+    links: [
+      { title: 'Get Funded', href: '#' },
+      { title: 'Purchase Order', href: '#' },
+      { title: 'Lendo Scoring', href: '#' }
+    ]
+  },
+  {
+    title: 'Invest',
+    links: [
+      { title: 'Invest', href: '#' },
+      { title: 'Auto Invest', href: '#' },
+      { title: 'Invoice Financing', href: '#' },
+      { title: "Shari'ah compliance", href: '#' }
+    ]
+  },
+  {
+    title: 'Get In Touch',
+    links: [
+      { icon: <FaTwitter />, title: 'Twitter', href: '#' },
+      { icon: <FaLinkedinIn />, title: 'LinkedIn', href: '#' },
+      { icon: <FaEnvelope />, title: 'Email Us', href: '#' }
+    ]
+  }
+];
+
 const AppFooter = () => (
   <>
     <Container as="footer" className="lendo__app-footer" fluid>
@@ -30,104 +69,25 @@ const AppFooter = () => (
                   </p>
                 </div>
                 <Row className="lendo__app-footer-links">
-                  <Col lg={3}>
-                    <p className="fw-bold">The Company</p>
-                    <ul className="list-unstyled">
-                      <li>
-                        <a href="#/" className="fw-light">
-                          About Lendo
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#/" className="fw-light">
-                          Our Thoughts
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#/" className="fw-light">
-                          Careers
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#/" className="fw-light">
-                          News
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#/" className="fw-light">
-                          Contact Us
-                        </a>
-                      </li>
-                    </ul>
-                  </Col>
-
-                  <Col lg={3}>
-                    <p className="fw-bold">For Business</p>
-                    <ul className="list-unstyled">
-                      <li>
-                        <a href="#/" className="fw-light">
-                          Get Funded
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#/" className="fw-light">
-                          Purchase Order
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#/" className="fw-light">
-                          Lendo Scoring
-                        </a>
-                      </li>
-                    </ul>
-                  </Col>
-
-                  <Col lg={3}>
-                    <p className="fw-bold">Invest</p>
-                    <ul className="list-unstyled">
-                      <li>
-                        <a href="#/" className="fw-light">
-                          Invest
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#/" className="fw-light">
-                          Auto-invest
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#/" className="fw-light">
-                          Invoice Financing{' '}
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#/" className="fw-light">
-                          Shari'ah compliance{' '}
-                        </a>
-                      </li>
-                    </ul>
-                  </Col>
-
-                  <Col lg={3}>
-                    <p className="fw-bold">Get in touch</p>
-                    <ul className="list-unstyled">
-                      <li>
-                        <a href="#/" className="fw-light">
-                          <FaTwitter /> Twitter
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#/" className="fw-light">
-                          <FaLinkedinIn /> Linkedin
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#/" className="fw-light">
-                          <FaEnvelope /> Email Us
-                        </a>
-                      </li>
-                    </ul>
-                  </Col>
+                  {footerLinks.map((col) => (
+                    <Col lg={3} key={col.title}>
+                      <p className="fw-bold">{col.title}</p>
+                      <ul className="list-unstyled">
+                        {col.links.map((link) => (
+                          <li key={link.title}>
+                            <a
+                              href={link.href}
+                              title={link.title}
+                              className="fw-light"
+                            >
+                              {link.icon && link.icon}
+                              {link.title}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    </Col>
+                  ))}
                 </Row>
               </Col>
 

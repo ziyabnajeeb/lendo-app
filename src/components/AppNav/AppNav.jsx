@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { FaChevronDown } from 'react-icons/fa6';
 
@@ -26,6 +27,12 @@ const AppNav = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto align-items-lg-center ml-lg-3 lendo__app-nav-links">
+            <Nav.Link as={NavLink} to="/">
+              Home
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="about">
+              About
+            </Nav.Link>
             <Nav.Link href="#home">
               For Business <FaChevronDown />
             </Nav.Link>
