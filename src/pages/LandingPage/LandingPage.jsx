@@ -1,6 +1,7 @@
 import {
   AppGrade,
   Faqs,
+  HeaderSection,
   HowLendoWorks,
   NewToInvesting,
   OurCommitment,
@@ -9,14 +10,15 @@ import {
 import './LandingPage.scss';
 
 const LandingPage = () => (
-  <main className="lendo__landing-page">
+  <>
+    <HeaderSection />
     <TransformGrowth />
     <HowLendoWorks />
     <NewToInvesting />
     <OurCommitment />
     <AppGrade />
     <Faqs />
-  </main>
+  </>
 );
 
 export default LandingPage;
