@@ -1,5 +1,3 @@
-export { default as AppNav } from './AppNav/AppNav';
-export { default as AppFooter } from './AppFooter/AppFooter';
 export { default as HeaderSection } from './HeaderSection/HeaderSection';
 export { default as TransformGrowth } from './LandinPage/TransformGrowth/TransformGrowth';
 export { default as HowLendoWorks } from './LandinPage/HowLendoWorks/HowLendoWorks';

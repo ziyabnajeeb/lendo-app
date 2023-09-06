@@ -7,51 +7,13 @@ import {
   InputGroup,
   Row
 } from 'react-bootstrap';
+import { Link, NavLink } from 'react-router-dom';
+import { footerLinks } from '../../data/data';
 
-import { FaEnvelope, FaLinkedinIn, FaTwitter } from 'react-icons/fa6';
 import { CopyRights } from '../../components';
 import lendoLogo from '../../assets/logo.svg';
 import scrollTopArrow from '../../assets/scroll-top.svg';
 import './AppFooter.css';
-
-const footerLinks = [
-  {
-    title: 'The Company',
-    links: [
-      { title: 'About Lendo', href: '#' },
-      { title: 'Our Thoughts', href: '#' },
-      { title: 'Careers', href: '#' },
-      { title: 'News', href: '#' },
-      { title: 'Contacts', href: '#' }
-    ]
-  },
-
-  {
-    title: 'For Business',
-    links: [
-      { title: 'Get Funded', href: '#' },
-      { title: 'Purchase Order', href: '#' },
-      { title: 'Lendo Scoring', href: '#' }
-    ]
-  },
-  {
-    title: 'Invest',
-    links: [
-      { title: 'Invest', href: '#' },
-      { title: 'Auto Invest', href: '#' },
-      { title: 'Invoice Financing', href: '#' },
-      { title: "Shari'ah compliance", href: '#' }
-    ]
-  },
-  {
-    title: 'Get In Touch',
-    links: [
-      { icon: <FaTwitter />, title: 'Twitter', href: '#' },
-      { icon: <FaLinkedinIn />, title: 'LinkedIn', href: '#' },
-      { icon: <FaEnvelope />, title: 'Email Us', href: '#' }
-    ]
-  }
-];
 
 const AppFooter = () => (
   <>
@@ -62,7 +24,9 @@ const AppFooter = () => (
             <Row>
               <Col lg={7}>
                 <div className="lendo__app-footer-branding w-75">
-                  <Image src={lendoLogo} alt="logo" />
+                  <Link to="/">
+                    <Image src={lendoLogo} alt="logo" />
+                  </Link>
                   <p className="fw-light">
                     Lendo is located in 6533 Al Olaya St. – Alworood,
                     Riyadh 12251 – 2609, Saudi Arabia.
@@ -75,14 +39,14 @@ const AppFooter = () => (
                       <ul className="list-unstyled">
                         {col.links.map((link) => (
                           <li key={link.title}>
-                            <a
-                              href={link.href}
+                            <NavLink
+                              to={link.href}
                               title={link.title}
                               className="fw-light"
                             >
-                              {link.icon && link.icon}
+                              {link.icon && <link.icon />}
                               {link.title}
-                            </a>
+                            </NavLink>
                           </li>
                         ))}
                       </ul>

@@ -1,21 +1,23 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { AppFooter, AppNav } from './components';
-import { About, LandingPage } from './pages';
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider
+} from 'react-router-dom';
+import { About, Contact, LandingPage } from './pages';
+import { AppLayout } from './layouts';
 import './App.css';
 
-const App = () => (
-  <div className="lendo mt-1">
-    <BrowserRouter>
-      <AppNav />
-      <main className="lendo__content-body">
-        <Routes>
-          <Route index element={<LandingPage />} />
-          <Route path="about" element={<About />} />
-        </Routes>
-      </main>
-      <AppFooter />
-    </BrowserRouter>
-  </div>
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<AppLayout />}>
+      <Route index element={<LandingPage />} />
+      <Route path="about" element={<About />} />
+      <Route path="contact" element={<Contact />} />
+    </Route>
+  )
 );
+
+const App = () => <RouterProvider router={router} />;
 
 export default App;

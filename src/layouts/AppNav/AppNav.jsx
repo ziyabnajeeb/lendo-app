@@ -5,8 +5,8 @@ import { FaChevronDown } from 'react-icons/fa6';
 
 import logo from '../../assets/logo.svg';
 import logoWhite from '../../assets/logo-white.svg';
+import { ThemeSwitcher } from '../../components';
 import './AppNav.css';
-import { ThemeSwitcher } from '../index';
 
 const AppNav = () => {
   const [isLightTheme, setIsLightTheme] = useState(true);
@@ -42,7 +42,9 @@ const AppNav = () => {
             <Nav.Link href="#link">
               Invest <FaChevronDown />
             </Nav.Link>
-            <Nav.Link href="#link">Contact Us</Nav.Link>
+            <Nav.Link as={NavLink} to="contact">
+              Contact Us
+            </Nav.Link>
           </Nav>
           <Nav className="align-items-lg-center">
             <Nav.Link as="div" className="d-none d-lg-block">

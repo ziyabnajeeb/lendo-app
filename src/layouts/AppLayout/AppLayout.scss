@@ -1,0 +1,7 @@
+@use '../../scss/abstracts' as *;
+
+.lendo {
+  &__content-body {
+    padding-top: rem(150px);
+  }
+}
