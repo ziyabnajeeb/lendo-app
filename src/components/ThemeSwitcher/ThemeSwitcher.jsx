@@ -4,12 +4,12 @@ import { FaMoon, FaSun } from 'react-icons/fa6';
 import { Button } from 'react-bootstrap';
 import { useLocalStorage } from '../../util';
 
-const ThemeSwitcher = ({ setIsDarkTheme }) => {
+const ThemeSwitcher = ({ setIsLightTheme }) => {
   const [theme, setTheme] = useLocalStorage('lendo-theme', 'light');
 
   const handleThemeToggle = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
-    setIsDarkTheme(theme === 'dark');
+    setIsLightTheme(theme === 'dark');
   };
 
   useEffect(() => {

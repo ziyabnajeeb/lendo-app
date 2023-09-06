@@ -9,21 +9,24 @@ import './AppNav.css';
 import { ThemeSwitcher } from '../index';
 
 const AppNav = () => {
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
+  const [isLightTheme, setIsLightTheme] = useState(true);
 
   return (
     <Navbar
       expand="lg"
-      className="bg-body-tertiary fixed-top shadow-sm lendo__app-nav"
+      className="bg-body-tertiary fixed-top shadow lendo__app-nav"
     >
       <Container fluid className="px-4">
         <Navbar.Brand href="#home" className="me-lg-5">
-          {isDarkTheme ? (
+          {isLightTheme ? (
             <img src={logo} alt="" srcSet="" />
           ) : (
             <img src={logoWhite} alt="" srcSet="" />
           )}
         </Navbar.Brand>
+        <Nav.Link as="div" className="d-lg-none ms-auto">
+          <ThemeSwitcher setIsLightTheme={setIsLightTheme} />
+        </Nav.Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto align-items-lg-center ml-lg-3 lendo__app-nav-links">
@@ -42,8 +45,8 @@ const AppNav = () => {
             <Nav.Link href="#link">Contact Us</Nav.Link>
           </Nav>
           <Nav className="align-items-lg-center">
-            <Nav.Link as="div">
-              <ThemeSwitcher setIsDarkTheme={setIsDarkTheme} />
+            <Nav.Link as="div" className="d-none d-lg-block">
+              <ThemeSwitcher setIsLightTheme={setIsLightTheme} />
             </Nav.Link>
             <Nav.Link href="#link">Arabic</Nav.Link>
             <Nav.Link href="#link">

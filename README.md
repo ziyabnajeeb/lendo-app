@@ -31,13 +31,13 @@ experience:
 4. Now, execute the following command to install the necessary
    dependencies:
 
-### `npm install`
+### `pnpm install`
 
 Please be patient while the dependencies are being installed. Once the
 installation process is complete, run the following command to start
 the application:
 
-### `npm start`
+### `pnpm start`
 
 App will be started at
 [http://localhost:3000/](http://localhost:3000/)
