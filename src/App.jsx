@@ -5,7 +5,7 @@ import {
   RouterProvider
 } from 'react-router-dom';
 import { AboutLayout, AppLayout } from './layouts';
-import { Contact, LandingPage } from './pages';
+import { Contact, LandingPage, PageNotFound } from './pages';
 import { Faqs } from './components';
 
 import './App.css';
@@ -19,6 +19,7 @@ const router = createBrowserRouter(
         <Route path="contact" element={<Contact />} />
       </Route>
       <Route path="contact" element={<Contact />} />
+      <Route path="*" element={<PageNotFound />} />
     </Route>
   )
 );

@@ -22,14 +22,14 @@ const About = () => (
       </Col>
     </Row>
     <Row>
-      <Col sm={12}>
+      <Col as="nav" sm={12}>
         <Button
           as={Link}
           to="faqs"
           variant="primary"
           className="me-3"
         >
-          Faqs
+          FAQs
         </Button>
         <Button as={Link} to="contact" variant="outline-secondary">
           Contact Us
