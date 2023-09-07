@@ -9,8 +9,8 @@ import {
 } from 'react-bootstrap';
 import { Link, NavLink } from 'react-router-dom';
 import { footerLinks } from '../../data/data';
-
 import { CopyRights } from '../../components';
+
 import lendoLogo from '../../assets/logo.svg';
 import scrollTopArrow from '../../assets/scroll-top.svg';
 import './AppFooter.css';
@@ -76,7 +76,9 @@ const AppFooter = () => (
                       aria-label="Recipient's username"
                       aria-describedby="basic-addon2"
                     />
-                    <Button id="button-addon2">Subscribe</Button>
+                    <Button id="button-addon2" size="lg">
+                      Subscribe
+                    </Button>
                   </InputGroup>
 
                   <p className="fw-light lendo__app-footer-subscribe-email-text">

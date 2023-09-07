@@ -1,22 +1,31 @@
-import { Container } from 'react-bootstrap';
+import { Button, Col, Container, Form, Row } from 'react-bootstrap';
 import './Contact.css';
 
 const Contact = () => {
   return (
-    <Container>
-      <h1 className="fw-bolder">Contact Us</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-        deleniti libero pariatur, autem quod maxime reiciendis, illum
-        minus sunt nobis ea obcaecati repudiandae repellendus facere
-        laudantium velit officia corrupti adipisci?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-        deleniti libero pariatur, autem quod maxime reiciendis, illum
-        minus sunt nobis ea obcaecati repudiandae repellendus facere
-        laudantium velit officia corrupti adipisci?
-      </p>
+    <Container className="mb-5">
+      <Row>
+        <Col md={6}>
+          <h1 className="fw-bolder">Contact Us</h1>
+          <Form>
+            <Form.Group className="mb-3" controlId="login">
+              <Form.Label>Email address</Form.Label>
+              <Form.Control type="email" placeholder="Enter email" />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="password">
+              <Form.Label>Password</Form.Label>
+              <Form.Control type="password" placeholder="Password" />
+            </Form.Group>
+            <Button
+              variant="primary"
+              type="submit"
+              onClick={(e) => e.preventDefault()}
+            >
+              Submit
+            </Button>
+          </Form>
+        </Col>
+      </Row>
     </Container>
   );
 };

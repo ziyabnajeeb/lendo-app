@@ -7,6 +7,7 @@ import {
   OurCommitment,
   TransformGrowth
 } from '../../components';
+
 import './LandingPage.scss';
 
 const LandingPage = () => (
@@ -17,8 +18,7 @@ const LandingPage = () => (
     <NewToInvesting />
     <OurCommitment />
     <AppGrade />
-    <Faqs />
+    <Faqs className="lendo__landing-faqs" />
   </>
 );
-
 export default LandingPage;

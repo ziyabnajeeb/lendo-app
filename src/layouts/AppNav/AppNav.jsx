@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { FaChevronDown } from 'react-icons/fa6';
 
@@ -17,7 +17,7 @@ const AppNav = () => {
       className="bg-body-tertiary fixed-top shadow lendo__app-nav"
     >
       <Container fluid className="px-4">
-        <Navbar.Brand href="#home" className="me-lg-5">
+        <Navbar.Brand as={Link} to="/" className="me-lg-5">
           {isLightTheme ? (
             <img src={logo} alt="" srcSet="" />
           ) : (

@@ -1,4 +1,7 @@
 @use '../../scss/abstracts' as *;
+$btn-padding-y-lg: rem(15px);
+$btn-padding-x-lg: rem(30px);
+$btn-border-radius-lg: var(--bs-border-radius-lg);
 
 .lendo__app-footer {
   background-color: $lendo-light-blue;
@@ -49,13 +52,13 @@
       }
 
       .btn {
-        position: absolute !important;
+        position: absolute;
+        top: rem(15px);
+        right: rem(20px);
+        padding-block: $btn-padding-y-lg;
+        padding-inline: $btn-padding-x-lg;
         border-radius: var(--bs-border-radius-lg) !important;
-        top: rem(15px) !important;
-        right: rem(20px) !important;
-        padding-block: rem(15px) !important;
-        padding-inline: rem(30px) !important;
-        z-index: 5 !important;
+        z-index: 5;
       }
     }
 

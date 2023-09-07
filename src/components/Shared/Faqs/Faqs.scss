@@ -1,10 +1,11 @@
 @use '../../../scss/abstracts' as *;
-
-.lendo__faqs {
+.lendo__landing-faqs {
   margin-top: rem(155px);
   padding-top: rem(145px);
   padding-bottom: rem(200px);
+}
 
+.lendo__faqs {
   &-header {
     margin-bottom: rem(80px);
 

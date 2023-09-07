@@ -4,6 +4,6 @@ export { default as HowLendoWorks } from './LandinPage/HowLendoWorks/HowLendoWor
 export { default as NewToInvesting } from './LandinPage/NewToInvesting/NewToInvesting';
 export { default as OurCommitment } from './LandinPage/OurCommitment/OurCommitment';
 export { default as AppGrade } from './LandinPage/AppGrade/AppGrade';
-export { default as Faqs } from './LandinPage/Faqs/Faqs';
+export { default as Faqs } from './Shared/Faqs/Faqs';
 export { default as CopyRights } from './LandinPage/CopyRights/CopyRights';
 export { default as ThemeSwitcher } from './ThemeSwitcher/ThemeSwitcher';
