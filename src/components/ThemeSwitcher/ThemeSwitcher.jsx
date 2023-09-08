@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import './ThemeSwitcher.css';
 import { FaMoon, FaSun } from 'react-icons/fa6';
 import { Button } from 'react-bootstrap';
 import { useLocalStorage } from '../../util';

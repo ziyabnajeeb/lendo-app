@@ -1,11 +1,12 @@
 import { Accordion, Col, Container, Row } from 'react-bootstrap';
+import { Div, H2, H5, Text } from '../../UI/Tag/Tag';
+import { Link } from 'react-router-dom';
 import FaqsItem from './FaqsItem/FaqsItem';
 import { faqsData } from '../../../data/data';
 
 import './Faqs.css';
 
 const Faqs = ({ className }) => {
-  console.log('🚀 ~ file: Faqs.jsx:8 ~ Faqs ~ className:', className);
   return (
     <Container
       as="section"
@@ -15,31 +16,31 @@ const Faqs = ({ className }) => {
     >
       <Row>
         <Col lg={12}>
-          <div className="lendo__faqs-header w-50">
-            <h2 className="fw-bolder">FAQs</h2>
-            <p>
+          <Div className="lendo__faqs-header w-50">
+            <H2 className="fw-bolder">FAQs</H2>
+            <Text>
               Get prompt responses from a friendly, professional and
               knowledgable support team. Have more questions?{' '}
-              <a href="#/">Visit our FAQs page</a>
-            </p>
-          </div>
+              <Link to="about">Visit our FAQs page</Link>
+            </Text>
+          </Div>
 
-          <div className="lendo__faqs-content">
+          <Div className="lendo__faqs-content">
             <Accordion>
               {faqsData &&
                 faqsData.map((faqs) => (
                   <FaqsItem key={faqs.id} faqs={faqs} />
                 ))}
             </Accordion>
-          </div>
+          </Div>
 
-          <div className="lendo__faqs-more text-center">
-            <h5 className="fw-bold">Got more questions?</h5>
-            <p className="pb-0">
-              Please <a href="#/">Contact us</a> and we will answer
-              your questions
-            </p>
-          </div>
+          <Div className="lendo__faqs-more text-center">
+            <H5 className="fw-bold">Got more questions?</H5>
+            <Text className="pb-0">
+              Please <Link to="contact">Contact us</Link> and we will
+              answer your questions
+            </Text>
+          </Div>
         </Col>
       </Row>
     </Container>

@@ -1,14 +1,14 @@
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
 import { H1 } from '../../components/UI/Tag/Tag';
 
-import './Contact.css';
+import './Login.css';
 
-const Contact = () => {
+const Login = () => {
   return (
     <Container className="mb-5">
       <Row>
         <Col md={6}>
-          <H1 className="fw-bolder">Contact Us</H1>
+          <H1 className="fw-bolder">Login</H1>
           <Form>
             <Form.Group className="mb-3" controlId="login">
               <Form.Label>Email address</Form.Label>
@@ -32,4 +32,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Login;

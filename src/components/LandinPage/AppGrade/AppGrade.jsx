@@ -1,8 +1,9 @@
 import { Col, Container, Image, Row } from 'react-bootstrap';
-
+import { Div, H2, Text } from '../../UI/Tag/Tag';
 import appGradeCircleBg from '../../../assets/app-grade-circle.svg';
 import appGradePhone from '../../../assets/app-grade-phone.png';
 import qrScanner from '../../../assets/qr-scanner.svg';
+
 import './AppGrade.css';
 
 const AppGrade = () => (
@@ -12,21 +13,21 @@ const AppGrade = () => (
         <Container>
           <Row className="lendo__app-grade-content justify-content-center align-items-center">
             <Col lg={6}>
-              <div className="lendo__app-grade-content-left">
-                <h2 className="fw-bolder">
+              <Div className="lendo__app-grade-content-left">
+                <H2 className="fw-bolder">
                   App-grade your investments.
-                </h2>
-                <p className="fw-bold py-4">
+                </H2>
+                <Text className="fw-bold py-4">
                   Lorem ipsum dolor sit amet, consectetur adipiscing
                   elit, sed do eiusmod tempor incididunt ut labore et
                   dolore magna aliqua. Ut enim ad minim veniam.
-                </p>
+                </Text>
                 <Image
                   src={qrScanner}
                   alt="qr scanner"
                   className="lendo__app-grade-content-qr-scanner"
                 />
-              </div>
+              </Div>
             </Col>
             <Col lg={6}>
               <Image

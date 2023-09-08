@@ -7,12 +7,13 @@ import {
   InputGroup,
   Row
 } from 'react-bootstrap';
+import { Div, LI, Text, UL } from '../../components/UI/Tag/Tag';
 import { Link, NavLink } from 'react-router-dom';
 import { footerLinks } from '../../data/data';
 import { CopyRights } from '../../components';
-
 import lendoLogo from '../../assets/logo.svg';
 import scrollTopArrow from '../../assets/scroll-top.svg';
+
 import './AppFooter.css';
 
 const AppFooter = () => (
@@ -23,22 +24,22 @@ const AppFooter = () => (
           <Container>
             <Row>
               <Col lg={7}>
-                <div className="lendo__app-footer-branding w-75">
+                <Div className="lendo__app-footer-branding w-75">
                   <Link to="/">
                     <Image src={lendoLogo} alt="logo" />
                   </Link>
-                  <p className="fw-light">
+                  <Text className="fw-light">
                     Lendo is located in 6533 Al Olaya St. – Alworood,
                     Riyadh 12251 – 2609, Saudi Arabia.
-                  </p>
-                </div>
+                  </Text>
+                </Div>
                 <Row className="lendo__app-footer-links">
                   {footerLinks.map((col) => (
                     <Col lg={3} key={col.title}>
-                      <p className="fw-bold">{col.title}</p>
-                      <ul className="list-unstyled">
+                      <Text className="fw-bold">{col.title}</Text>
+                      <UL className="list-unstyled">
                         {col.links.map((link) => (
-                          <li key={link.title}>
+                          <LI key={link.title}>
                             <NavLink
                               to={link.href}
                               title={link.title}
@@ -47,25 +48,25 @@ const AppFooter = () => (
                               {link.icon && <link.icon />}
                               {link.title}
                             </NavLink>
-                          </li>
+                          </LI>
                         ))}
-                      </ul>
+                      </UL>
                     </Col>
                   ))}
                 </Row>
               </Col>
 
               <Col lg={5} className="d-flex">
-                <div className="lendo__app-footer-subscribe">
-                  <p className="text-dark-blue mb-0">
+                <Div className="lendo__app-footer-subscribe">
+                  <Text className="text-dark-blue mb-0">
                     Investment through Lendo involves financing to
                     small and medium sized businesses, so your
                     investment can go down as well as up.
-                  </p>
+                  </Text>
 
-                  <p className="fw-bold text-dark-blue mb-0 lendo__app-footer-subscribe-heading-text">
+                  <Text className="fw-bold text-dark-blue mb-0 lendo__app-footer-subscribe-heading-text">
                     Subscribe to our newsletter
-                  </p>
+                  </Text>
 
                   <InputGroup
                     size="lg"
@@ -81,17 +82,17 @@ const AppFooter = () => (
                     </Button>
                   </InputGroup>
 
-                  <p className="fw-light lendo__app-footer-subscribe-email-text">
+                  <Text className="fw-light lendo__app-footer-subscribe-email-text">
                     Your email address will be kept confidential and
                     only used to send our newsletter or respond to any
                     queries.
-                  </p>
-                </div>
-                <div className="lendo__app-footer-scroll-top ms-auto">
+                  </Text>
+                </Div>
+                <Div className="lendo__app-footer-scroll-top ms-auto">
                   <a href="#/">
                     <Image src={scrollTopArrow} alt="scrollTop" />
                   </a>
-                </div>
+                </Div>
               </Col>
             </Row>
           </Container>

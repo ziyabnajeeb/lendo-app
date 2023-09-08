@@ -1,24 +1,26 @@
 import { Button, Col, Container, Row } from 'react-bootstrap';
-import './About.css';
+import { H1, Text } from '../../components/UI/Tag/Tag';
 import { Link } from 'react-router-dom';
+
+import './About.css';
 
 const About = () => (
   <Container className="mb-5">
     <Row>
       <Col sm={12}>
-        <h1 className="fw-bolder">About</h1>
-        <p>
+        <H1 className="fw-bolder">About</H1>
+        <Text>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
           deleniti libero pariatur, autem quod maxime reiciendis,
           illum minus sunt nobis ea obcaecati repudiandae repellendus
           facere laudantium velit officia corrupti adipisci?
-        </p>
-        <p>
+        </Text>
+        <Text>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
           deleniti libero pariatur, autem quod maxime reiciendis,
           illum minus sunt nobis ea obcaecati repudiandae repellendus
           facere laudantium velit officia corrupti adipisci?
-        </p>
+        </Text>
       </Col>
     </Row>
     <Row>

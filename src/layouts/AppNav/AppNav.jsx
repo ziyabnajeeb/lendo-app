@@ -51,7 +51,7 @@ const AppNav = () => {
               <ThemeSwitcher setIsLightTheme={setIsLightTheme} />
             </Nav.Link>
             <Nav.Link href="#link">Arabic</Nav.Link>
-            <Nav.Link href="#link">
+            <Nav.Link as={Link} to="login">
               <Button>Login to Lendo</Button>
             </Nav.Link>
           </Nav>

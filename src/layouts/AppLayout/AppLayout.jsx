@@ -1,12 +1,13 @@
 import { Outlet } from 'react-router-dom';
 import { AppFooter, AppNav } from '../../layouts';
 
+import { LendoApp, LendoContent } from '../../components/UI/Tag/Tag';
 import './AppLayout.css';
 
 const AppLayout = () => (
-  <LendoApp>
+  <LendoApp className="lendo mt-1">
     <AppNav />
-    <LendoContent>
+    <LendoContent className="lendo__content-body">
       <Outlet />
     </LendoContent>
     <AppFooter />
@@ -14,10 +15,3 @@ const AppLayout = () => (
 );
 
 export default AppLayout;
-
-const LendoApp = ({ children }) => (
-  <div className="lendo mt-1">{children}</div>
-);
-const LendoContent = ({ children }) => (
-  <main className="lendo__content-body">{children}</main>
-);
