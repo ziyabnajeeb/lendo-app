@@ -1,6 +1,10 @@
 @use '../../scss/abstracts' as *;
 
 .lendo__app-nav {
+  &-logo {
+    height: rem(48px);
+    width: rem(112px);
+  }
   .nav-link {
     color: var(--bs-lendo-dark-blue) !important;
     font-weight: 700 !important;

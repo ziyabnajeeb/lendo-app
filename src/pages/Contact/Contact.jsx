@@ -1,4 +1,5 @@
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
+
 import { H1 } from '../../components/UI/Tag/Tag';
 
 import './Contact.css';
@@ -18,11 +19,7 @@ const Contact = () => {
               <Form.Label>Password</Form.Label>
               <Form.Control type="password" placeholder="Password" />
             </Form.Group>
-            <Button
-              variant="primary"
-              type="submit"
-              onClick={(e) => e.preventDefault()}
-            >
+            <Button variant="primary" type="submit" onClick={(e) => e.preventDefault()}>
               Submit
             </Button>
           </Form>

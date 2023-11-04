@@ -1,6 +1,7 @@
 import React from 'react';
-import { About } from '../../pages';
 import { Outlet } from 'react-router-dom';
+
+import { About } from '../../pages';
 
 const AboutLayout = () => {
   return (

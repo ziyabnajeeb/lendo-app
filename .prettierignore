@@ -9,3 +9,13 @@ public/**
 node_modules/**
 coverage/**
 src/registerServiceWorker.js
+
+# package-lock.json
+*-lock.json 
+*-lock.yaml
+
+# json
+.vscode/settings.json
+package.json
+.eslintrc.json
+vite.config.js

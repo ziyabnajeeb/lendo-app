@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
-import { FaMoon, FaSun } from 'react-icons/fa6';
 import { Button } from 'react-bootstrap';
+import { FaMoon, FaSun } from 'react-icons/fa6';
+
 import { useLocalStorage } from '../../util';
 
 const ThemeSwitcher = ({ setIsLightTheme }) => {
@@ -8,7 +9,7 @@ const ThemeSwitcher = ({ setIsLightTheme }) => {
 
   const handleThemeToggle = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
-    setIsLightTheme(theme === 'dark');
+    setIsLightTheme(theme === 'light' ? 'dark' : 'light');
   };
 
   useEffect(() => {
@@ -22,11 +23,7 @@ const ThemeSwitcher = ({ setIsLightTheme }) => {
       role="switch"
       onClick={handleThemeToggle}
     >
-      {theme === 'dark' ? (
-        <FaSun className="fs-5" />
-      ) : (
-        <FaMoon className="fs-5" />
-      )}
+      {theme === 'dark' ? <FaSun className="fs-5" /> : <FaMoon className="fs-5" />}
     </Button>
   );
 };

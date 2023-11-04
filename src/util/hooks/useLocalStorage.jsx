@@ -6,10 +6,7 @@ const useLocalStorage = (key, initialValue) => {
       const localValue = window.localStorage.getItem(key);
       return localValue ? JSON.parse(localValue) : initialValue;
     } catch (err) {
-      console.log(
-        '🚀 ~ file: useLocalStorage.jsx:9 ~ const[value,setValue]=useState ~ err:',
-        err
-      );
+      console.log('🚀 ~ file: useLocalStorage.jsx:9 ~ const[value,setValue]=useState ~ err:', err);
       return initialValue;
     }
   });

@@ -1,7 +1,8 @@
 import { Outlet } from 'react-router-dom';
-import { AppFooter, AppNav } from '../../layouts';
 
 import { LendoApp, LendoContent } from '../../components/UI/Tag/Tag';
+import { AppFooter, AppNav } from '../../layouts';
+
 import './AppLayout.css';
 
 const AppLayout = () => (

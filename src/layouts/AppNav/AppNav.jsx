@@ -1,27 +1,26 @@
 import { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { FaChevronDown } from 'react-icons/fa6';
+import { Link, NavLink } from 'react-router-dom';
 
-import logo from '../../assets/logo.svg';
-import logoWhite from '../../assets/logo-white.svg';
+import { ReactComponent as LogoWhite } from '../../assets/logo-white.svg';
+import { ReactComponent as Logo } from '../../assets/logo.svg';
 import { ThemeSwitcher } from '../../components';
+
 import './AppNav.css';
 
 const AppNav = () => {
-  const [isLightTheme, setIsLightTheme] = useState(true);
+  const [isLightTheme, setIsLightTheme] = useState('light');
+  console.log('🚀 ~ file: AppNav.jsx:14 ~ AppNav ~ isLightTheme:', isLightTheme);
 
   return (
-    <Navbar
-      expand="lg"
-      className="bg-body-tertiary fixed-top shadow lendo__app-nav"
-    >
+    <Navbar expand="lg" className="bg-body-tertiary fixed-top shadow lendo__app-nav">
       <Container fluid className="px-4">
         <Navbar.Brand as={Link} to="/" className="me-lg-5">
-          {isLightTheme ? (
-            <img src={logo} alt="" srcSet="" />
+          {isLightTheme === 'light' ? (
+            <Logo className="lendo__app-nav-logo" />
           ) : (
-            <img src={logoWhite} alt="" srcSet="" />
+            <LogoWhite className="lendo__app-nav-logo" />
           )}
         </Navbar.Brand>
         <Nav.Link as="div" className="d-lg-none ms-auto">
@@ -47,7 +46,7 @@ const AppNav = () => {
             </Nav.Link>
           </Nav>
           <Nav className="align-items-lg-center">
-            <Nav.Link as="div" className="d-none d-lg-block">
+            <Nav.Link as="div" className="d-lg-block">
               <ThemeSwitcher setIsLightTheme={setIsLightTheme} />
             </Nav.Link>
             <Nav.Link href="#link">Arabic</Nav.Link>

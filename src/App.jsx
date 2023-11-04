@@ -1,12 +1,8 @@
-import {
-  createBrowserRouter,
-  createRoutesFromElements,
-  Route,
-  RouterProvider
-} from 'react-router-dom';
+import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
+
+import { Faqs } from './components';
 import { AboutLayout, AppLayout } from './layouts';
 import { Contact, LandingPage, Login, PageNotFound } from './pages';
-import { Faqs } from './components';
 
 import './App.css';
 
@@ -21,8 +17,8 @@ const router = createBrowserRouter(
       <Route path="contact" element={<Contact />} />
       <Route path="login" element={<Login />} />
       <Route path="*" element={<PageNotFound />} />
-    </Route>
-  )
+    </Route>,
+  ),
 );
 
 const App = () => <RouterProvider router={router} />;

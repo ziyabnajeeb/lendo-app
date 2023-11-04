@@ -1,4 +1,5 @@
 import React from 'react';
+
 export const Tag = (tag) =>
   React.memo((props) => {
     const Tag = tag;
@@ -7,9 +8,7 @@ export const Tag = (tag) =>
       background: theme.background ? theme.background : undefined,
       color: theme.color ? theme.color : undefined,
       padding: theme.size.padding ? theme.size.padding : undefined,
-      borderRadius: theme.size.borderRadius
-        ? theme.size.borderRadius
-        : undefined
+      borderRadius: theme.size.borderRadius ? theme.size.borderRadius : undefined,
     };
     return (
       <Tag style={style} className={props.className}>
@@ -19,9 +18,7 @@ export const Tag = (tag) =>
   });
 
 export const LendoApp = React.memo((props) => <div {...props} />);
-export const LendoContent = React.memo((props) => (
-  <main {...props} />
-));
+export const LendoContent = React.memo((props) => <main {...props} />);
 export const Div = React.memo((props) => <div {...props} />);
 export const Section = React.memo((props) => <section {...props} />);
 export const Article = React.memo((props) => <article {...props} />);

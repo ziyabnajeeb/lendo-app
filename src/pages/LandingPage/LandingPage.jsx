@@ -5,10 +5,10 @@ import {
   HowLendoWorks,
   NewToInvesting,
   OurCommitment,
-  TransformGrowth
+  TransformGrowth,
 } from '../../components';
 
-import './LandingPage.scss';
+import './LandingPage.css';
 
 const LandingPage = () => (
   <>
